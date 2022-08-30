@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+}
+
+main {
+  height: 80vh;
+}
+
+#main-title {
+  padding: 50px 0;
+}
+
+#welcome-text {
+  position: absolute;
+  top: 30%;
+  background-color: rgba(var(--bs-dark-rgb),0.6);
+  width: 75%;
+}
+
+#carouselExampleIndicators {
+  max-height: 90vh;
+  overflow: hidden;
+}

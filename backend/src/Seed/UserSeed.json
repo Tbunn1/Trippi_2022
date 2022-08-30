@@ -1,0 +1,9 @@
+[
+  {
+    "_id": "111111111111111111111111",
+    "username": "kevin",
+    "password": "p@ssw0rd",
+    "country": "USA",
+    "image": "kevin.jpeg"
+  }
+]

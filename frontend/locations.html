@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trippi - locations</title>
+    
+    <!-- start: Bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <!-- end: Bootstrap -->
+
+    <!-- start: jQuery -->
+    <script src="vendor/jquery.min.js"></script>
+    <!-- end: jQuery -->
+
+    <!-- start: include templates -->
+    <script type="text/javascript" src="components/index.js"></script>
+    <!-- end: include templates -->
+
+    <!-- start: custom js/css -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/locations.css">
+    <script type="text/javascript" src="js/locations.js" defer></script>
+    <!-- end: custom js/css -->
+  </head>
+  
+  <body class="h-100 text-white bg-dark">
+    <header-component></header-component>
+    <notification-component></notification-component>
+    <main class="w-100 cover-container d-flex p-3 pt-5 mx-auto flex-column d-flex text-center">
+      <div class="d-flex p-3 mx-auto flex-column">
+        <div class="px-3">
+          <h1 id="main-title">Locations!</h1>
+        </div>
+        <div id="locations-wrapper"></div>
+      </div>
+      <div>
+
+      </div>
+    </main>
+    <footer-component></footer-component>
+</html>

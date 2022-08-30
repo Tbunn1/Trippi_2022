@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trippi - login</title>
+    
+    <!-- start: Bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <!-- end: Bootstrap -->
+
+    <!-- start: jQuery -->
+    <script src="vendor/jquery.min.js"></script>
+    <!-- end: jQuery -->
+
+    <!-- start: include templates -->
+    <script type="text/javascript" src="components/index.js"></script>
+    <!-- end: include templates -->
+
+    <!-- start: custom js/css -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/login.js" defer></script>
+    <!-- end: custom js/css -->
+  </head>
+  
+  <body class="text-white bg-dark">
+    <header-component></header-component>
+    <notification-component></notification-component>
+    <main class="w-100 cover-container d-flex p-3 pt-5 mx-auto flex-column d-flex text-center">
+      <div class="d-flex p-3 mx-auto flex-column">
+        <div class="px-3">
+          <h1>Join Us!</h1>
+        </div>
+      </div>
+      <div class="d-flex p-3 mx-auto flex-column">
+        <div id="login-card" class="m-3 card">
+          <h2 class="m-4 text-dark">Login</h2>
+          <form id="login-form" class="card-body">
+            <div class="row">
+              <div class="col form-floating has-validation">
+                <input
+                  required
+                  placeholder="Username"
+                  class="form-control"
+                  id="login-username"
+                  type="text"
+                  name="username">
+                <label class="text-dark ms-3" for="login-username"> Username </label>
+              </div>
+              <div class="col form-floating has-validation">
+                <input
+                  required
+                  placeholder="Password"
+                  class="form-control"
+                  id="login-password"
+                  type="password"
+                  name="password">
+                <label class="text-dark ms-3" for="login-password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 pt-3">
+                <button type="submit" class="float-end btn btn-primary"> Login </button>
+              </div>
+            </div>
+          </form>
+          <div class="card-footer">
+            <span class="text-dark">
+              or
+              <button id="flip-to-signup" class="btn btn-link">
+                Sign up
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div id="signup-card" class="m-3 card" hidden>
+          <h2 class="m-4 text-dark">Sign up</h2>
+          <form id="signup-form" class="card-body">
+            <div class="row mb-3">
+              <div class="col form-floating has-validation">
+                <input
+                  required
+                  placeholder="Username"
+                  class="form-control"
+                  id="signup-username"
+                  type="text"
+                  name="username">
+                <label class="text-dark ms-3" for="signup-username"> Username </label>
+              </div>
+              <div class="col form-floating has-validation">
+                <input
+                  required
+                  placeholder="Password"
+                  class="form-control"
+                  id="signup-password"
+                  type="password"
+                  name="password">
+                <label class="text-dark ms-3" for="signup-password">Password</label>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-12 form-floating has-validation">
+                <input
+                  required
+                  placeholder="Country"
+                  class="form-control"
+                  id="signup-country"
+                  type="text"
+                  name="country">
+                <label class="text-dark  ms-3" for="signup-country"> Country </label>
+              </div>
+            </div>
+             <div class="row mb-3">
+              <div class="col">
+                <label class="text-dark ms-3" for="signup-image"> Profile Picture </label>
+                <input
+                  placeholder="Profile Picture"
+                  class="form-control"
+                  id="signup-image"
+                  type="file"
+                  accept="image/png, image/jpeg, image/jpg"
+                  name="image">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 pt-3">
+                <button type="submit" class="float-end btn btn-primary"> Sign up </button>
+              </div>
+            </div>
+          </form>
+          <div class="card-footer">
+            <span class="text-dark">
+              or
+              <button id="flip-to-login" class="btn btn-link">
+                Login
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

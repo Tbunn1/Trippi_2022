@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+    mongo:
+        restart: always
+        image: mongo
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=dev
+            - MONGO_INITDB_ROOT_PASSWORD=dev
+            - MONGO_INITDB_DATABASE=trippi-db
+        ports:
+          - "27017:27017"
+    express:
+        build: ./backend
+        restart: always
+        environment: 
+            - MONGO_INITDB_ROOT_USERNAME=dev
+            - MONGO_INITDB_ROOT_PASSWORD=dev
+            - MONGO_INITDB_DATABASE=trippi-db
+            - JWT_SECRET=I@MsUp3Rs3c3+SYKE
+        depends_on:
+            - mongo
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./backend/src:/src

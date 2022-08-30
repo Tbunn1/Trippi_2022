@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trippi</title>
+    
+    <!-- start: Bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <!-- end: Bootstrap -->
+
+    <!-- start: jQuery -->
+    <script src="vendor/jquery.min.js"></script>
+    <!-- end: jQuery -->
+
+    <!-- start: include components -->
+    <script type="text/javascript" src="components/index.js"></script>
+    <!-- end: include components -->
+
+    <!-- start: custom js/css -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script type="text/javascript" src="js/home.js" defer></script>
+    <!-- end: custom js/css -->
+  </head>
+  
+  <body class="text-white bg-dark">
+    <header-component></header-component>
+    <!-- class="w-100 cover-container d-flex p-3 mx-auto flex-column d-flex text-center" -->
+    <main class="h-80vh">
+      <!-- carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img width="100%" src="static/annie-spratt-qyAka7W5uMY-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" src="static/jeshoots-com-mSESwdMZr-A-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" src="static/luca-bravo-O453M2Liufs-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" src="static/dino-reichmuth-A5rCN8626Ck-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img width="100%" src="static/s-migaj-Yui5vfKHuzs-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end carousel -->
+      
+      <div class="w-100 cover-container align-items-center d-flex p-3 mx-auto flex-column d-flex text-center">
+        <div id="welcome-text">
+          <div class="d-flex p-3 mx-auto flex-column">
+            <div class="px-3">
+              <h1 id="main-title">Welcome to Trippi!</h1>
+              <p class="lead">
+                Trippi is the all in one trip planning app! Find cool landmarks and attractions near you! Add them to a calendar and share them with friends!
+              </p>
+              <p class="lead">
+                <a
+                  id="main-action-btn"
+                  href="/login.html"
+                  class="text-dark btn btn-lg btn-secondary fw-bold border-white bg-white">
+                  Get Started!
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
